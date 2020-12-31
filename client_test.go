@@ -53,11 +53,8 @@ func TestPreview(t *testing.T) {
 			//Title: "Telegram собрался на ICO. В последнее время я несколько раз слышал от участников рынка слухи о том, что Telegram план...",
 			Title: "Для просмотра нужно войти или зарегистрироваться",
 		},
-		"https://facebook.com/permalink.php?story_fbid=1159419377602287&id=100006027061492": {
-			// skip: has different servers for thumbnails
-			// ThumbnailUrl: "https://external-arn2-1.xx.fbcdn.net/safe_image.php?d=AQHT-p_OOBeRCf7f&w=282&h=282&url=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FeIMB5D8d3SOR2%2Fgiphy.gif&cfs=1&_nc_cb=1&_nc_hash=AQE4cPaYplc9-Cit",
-			//Title: "Мойрэрамос Гамос",
-			Title: "Сомарэ Сомаг",
+		"https://www.facebook.com/groups/AliensAnonymous/permalink/2849150112008665": {
+			Title: "Facebook",
 		},
 		"https://github.com/meetecho/janus-gateway": {
 			ThumbnailUrl: "https://repository-images.githubusercontent.com/16734696/cb265c80-651c-11ea-9c93-c54a2d2284e7",
