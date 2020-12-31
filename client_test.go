@@ -24,7 +24,7 @@ func TestPreview(t *testing.T) {
 		"https://vk.com/shantitrash": {
 			// skip: has different servers for thumbnails
 			// ThumbnailUrl: "http://sun1-89.userapi.com/impf/c631625/v631625378/401/bXrjmBHZwP8.jpg?size=200x0&quality=96&crop=59,23,527,528&sign=b6e64806e0947daa745c9ed26df5c427&ava=1",
-			Title:        "Шанти-трэш",
+			Title: "Шанти-трэш",
 		},
 		"https://habr.com/ru/post/354472/": {
 			ThumbnailUrl: "https://habr.com/share/publication/354472/590e252e0c6748a2c367a8c72a67c422/?v=1",
@@ -56,7 +56,8 @@ func TestPreview(t *testing.T) {
 		"https://facebook.com/permalink.php?story_fbid=1159419377602287&id=100006027061492": {
 			// skip: has different servers for thumbnails
 			// ThumbnailUrl: "https://external-arn2-1.xx.fbcdn.net/safe_image.php?d=AQHT-p_OOBeRCf7f&w=282&h=282&url=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FeIMB5D8d3SOR2%2Fgiphy.gif&cfs=1&_nc_cb=1&_nc_hash=AQE4cPaYplc9-Cit",
-			Title:        "Мойрэрамос Гамос",
+			//Title: "Мойрэрамос Гамос",
+			Title: "Сомарэ Сомаг",
 		},
 		"https://github.com/meetecho/janus-gateway": {
 			ThumbnailUrl: "https://repository-images.githubusercontent.com/16734696/cb265c80-651c-11ea-9c93-c54a2d2284e7",
