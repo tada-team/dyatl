@@ -22,7 +22,8 @@ func TestPreview(t *testing.T) {
 			Title: "Example Domain",
 		},
 		"https://vk.com/shantitrash": {
-			ThumbnailUrl: "http://sun1-89.userapi.com/impf/c631625/v631625378/401/bXrjmBHZwP8.jpg?size=200x0&quality=96&crop=59,23,527,528&sign=b6e64806e0947daa745c9ed26df5c427&ava=1",
+			// skip: has different servers for thumbnails
+			// ThumbnailUrl: "http://sun1-89.userapi.com/impf/c631625/v631625378/401/bXrjmBHZwP8.jpg?size=200x0&quality=96&crop=59,23,527,528&sign=b6e64806e0947daa745c9ed26df5c427&ava=1",
 			Title:        "Шанти-трэш",
 		},
 		"https://habr.com/ru/post/354472/": {
@@ -53,7 +54,8 @@ func TestPreview(t *testing.T) {
 			Title: "Для просмотра нужно войти или зарегистрироваться",
 		},
 		"https://facebook.com/permalink.php?story_fbid=1159419377602287&id=100006027061492": {
-			ThumbnailUrl: "https://external-arn2-1.xx.fbcdn.net/safe_image.php?d=AQHT-p_OOBeRCf7f&w=282&h=282&url=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FeIMB5D8d3SOR2%2Fgiphy.gif&cfs=1&_nc_cb=1&_nc_hash=AQE4cPaYplc9-Cit",
+			// skip: has different servers for thumbnails
+			// ThumbnailUrl: "https://external-arn2-1.xx.fbcdn.net/safe_image.php?d=AQHT-p_OOBeRCf7f&w=282&h=282&url=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FeIMB5D8d3SOR2%2Fgiphy.gif&cfs=1&_nc_cb=1&_nc_hash=AQE4cPaYplc9-Cit",
 			Title:        "Мойрэрамос Гамос",
 		},
 		"https://github.com/meetecho/janus-gateway": {
@@ -71,7 +73,7 @@ func TestPreview(t *testing.T) {
 			if err != nil {
 				t.Fatal(err)
 			}
-			if result.ThumbnailUrl != testCase.ThumbnailUrl {
+			if testCase.ThumbnailUrl != "" && result.ThumbnailUrl != testCase.ThumbnailUrl {
 				t.Error("invalid ThumbnailUrl:\nwant:", testCase.ThumbnailUrl, "\ngot:", result.ThumbnailUrl)
 			}
 			if !strings.HasPrefix(result.Title, testCase.Title) {
