@@ -61,6 +61,10 @@ func TestPreview(t *testing.T) {
 			Title:        "meetecho/janus-gateway",
 			//Title: "GitHub - meetecho/janus-gateway: Janus WebRTC Server",
 		},
+		"https://www.instagram.com/p/CHbpUr5AVV9/": {
+			ThumbnailUrl: "https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/124390469_289059925669388_1482220283311209935_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108&_nc_ohc=7O7FDit7p1sAX927ROJ&tp=1&oh=22f88ae1099c08348781985e82b55e68&oe=60185F04",
+			Title:        "Публикация",
+		},
 		// FIXME: stopped after 10 redirects
 		//"https://developer.android.com/guide/topics/connectivity/telecom": {
 		//	Title: "Telecom framework overview |",
