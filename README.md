@@ -1,5 +1,4 @@
 ![example workflow name](https://github.com/tada-team/dyatl/workflows/build/badge.svg)
-
 [![codecov](https://codecov.io/gh/tada-team/dyatl/branch/main/graph/badge.svg)](https://codecov.io/gh/tada-team/dyatl)
 # Links checker
 
