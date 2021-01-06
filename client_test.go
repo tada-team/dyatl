@@ -65,6 +65,10 @@ func TestPreview(t *testing.T) {
 		//"https://developer.android.com/guide/topics/connectivity/telecom": {
 		//	Title: "Telecom framework overview |",
 		//},
+		"https://habr.com/ru/": {
+			ThumbnailUrl: "https://habr.com/images/habr_ru.png",
+			Title:        "Все публикации подряд / Хабр",
+		},
 	} {
 		t.Run(link, func(t *testing.T) {
 			result, err := c.Preview(link)
