@@ -50,10 +50,10 @@ func TestPreview(t *testing.T) {
 		"https://zoom.us/j/97953527417?pwd=ZU9YaVFTNjBhb0t3dDh4bFJoZlVKQT09": {
 			Title: "Join our Cloud HD Video Meeting",
 		},
-		"https://m.facebook.com/id77777/posts/10154846872521076": {
-			//Title: "Telegram собрался на ICO. В последнее время я несколько раз слышал от участников рынка слухи о том, что Telegram план...",
-			Title: "Для просмотра нужно войти или зарегистрироваться",
-		},
+		//"https://m.facebook.com/id77777/posts/10154846872521076": {
+		//	//Title: "Telegram собрался на ICO. В последнее время я несколько раз слышал от участников рынка слухи о том, что Telegram план...",
+		//	Title: "Для просмотра нужно войти или зарегистрироваться",
+		//},
 		"https://www.facebook.com/groups/AliensAnonymous/permalink/2849150112008665": {
 			Title: "Facebook",
 		},
