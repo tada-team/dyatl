@@ -39,7 +39,7 @@ func (u CheckedURL) LooksCorrect() bool {
 	}
 
 	host := u.Hostname()
-	if hasMajorTLD(host) && (u.Scheme == "http" || u.Scheme == "https" || u.Scheme == "ftp") {
+	if hasMajorTLD(host) && (u.Scheme == "http" || u.Scheme == "https" || u.Scheme == "ftp") && !strings.HasPrefix(host, ".") {
 		return true
 	}
 

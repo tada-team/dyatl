@@ -28,9 +28,11 @@ func TestLooksCorrect(t *testing.T) {
 		"http://sdfsdf.sdjfajsdklfjalk":                false,
 		"http://sdfsdf.sdjfajsdklfjalk.aero":           true,
 		"HTTPS://ya.ru":                                true,
+		".com":                                         false,
+		"http://.com":                                  false,
 	} {
 		if NewCheckedURL(url).LooksCorrect() != ok {
-			t.Error("fail: available:", url, "!=", ok)
+			t.Error("fail: looks correct:", url, "!=", ok)
 		}
 	}
 }
